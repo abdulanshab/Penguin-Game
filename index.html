@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Penguin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/penguin_1.png" type="image/x-icon">
+</head>
+
+<body onload="game()">
+    <div id="game">
+        <div id="title"></div>
+        <div class="penguin1 clck"></div>
+        <div class="penguin2 clck"></div>
+        <div class="penguin3 clck"></div>
+        <div class="penguin4 clck"></div>
+        <div class="penguin5 clck"></div>
+        <div class="penguin6 clck"></div>
+        <div class="penguin7 clck"></div>
+        <div class="penguin8 clck"></div>
+        <div class="penguin9 clck"></div>
+    </div>
+
+    <script>
+        var x = [];
+        var one, two, three, four, five, six, seven, eight;
+        function game() {
+            finded = 0;
+            var i = 0;
+            one = 0, two = 0, three = 0, four = 0, five = 0, six = 0, seven = 0, eight = 0;
+            clckDiv = document.getElementsByClassName("clck");
+            while (i < 9) {
+                rndm = Math.floor(Math.random() * 9) + 0;
+                flag = 0;
+                for (k = 0; k < x.length; k++) {
+                    if (rndm == x[k])
+                        flag = 1;
+                }
+                if (flag == 0) {
+                    x.push(rndm);
+                    i++;
+                    //console.log(rndm)
+                }
+            }
+            //console.log(x);
+            clckDiv[x[0]].setAttribute("onclick", "yeti()");
+            clckDiv[x[1]].setAttribute("onclick", "pen1()");
+            clckDiv[x[2]].setAttribute("onclick", "pen2()");
+            clckDiv[x[3]].setAttribute("onclick", "pen3()");
+            clckDiv[x[4]].setAttribute("onclick", "pen4()");
+            clckDiv[x[5]].setAttribute("onclick", "pen5()");
+            clckDiv[x[6]].setAttribute("onclick", "pen6()");
+            clckDiv[x[7]].setAttribute("onclick", "pen7()");
+            clckDiv[x[8]].setAttribute("onclick", "pen8()");
+        }
+
+        function yeti() {
+
+            clckDiv[x[0]].style.backgroundImage = "url('Images/yeti.png')";
+            window.setTimeout("window.location.href='gameover.html'", 500)
+        }
+
+        function pen1() {
+            clckDiv[x[1]].style.backgroundImage = "url('Images/penguin_1.png')";
+            if (one == 0) {
+                finded++;
+                one++
+            }
+            if (finded == 8)
+                window.setTimeout("window.location.href='won.html'", 500)
+        }
+
+        function pen2() {
+            clckDiv[x[2]].style.backgroundImage = "url('Images/penguin_2.png')";
+            if (two == 0) {
+                finded++;
+                two++
+            }
+            if (finded == 8)
+                window.setTimeout("window.location.href='won.html'", 500)
+        }
+        function pen3() {
+
+            clckDiv[x[3]].style.backgroundImage = "url('Images/penguin_3.png')";
+            if (three == 0) {
+                finded++;
+                three++
+            }
+
+            if (finded == 8)
+                window.setTimeout("window.location.href='won.html'", 500)
+        }
+
+        function pen4() {
+            clckDiv[x[4]].style.backgroundImage = "url('Images/penguin_4.png')";
+            if (four == 0) {
+                finded++;
+                four++
+            }
+            if (finded == 8)
+                window.setTimeout("window.location.href='won.html'", 500)
+        }
+
+        function pen5() {
+            clckDiv[x[5]].style.backgroundImage = "url('Images/penguin_5.png')";
+            if (five == 0) {
+                finded++;
+                five++
+            }
+            if (finded == 8)
+                window.setTimeout("window.location.href='won.html'", 500)
+        }
+
+        function pen6() {
+            clckDiv[x[6]].style.backgroundImage = "url('Images/penguin_6.png')";
+            if (six == 0) {
+                finded++;
+                six++
+            }
+            if (finded == 8)
+                window.setTimeout("window.location.href='won.html'", 500)
+        }
+
+        function pen7() {
+            clckDiv[x[7]].style.backgroundImage = "url('Images/penguin_7.png')";
+            if (seven == 0) {
+                finded++;
+                seven++
+            }
+            if (finded == 8)
+                window.setTimeout("window.location.href='won.html'", 500)
+        }
+
+        function pen8() {
+            clckDiv[x[8]].style.backgroundImage = "url('Images/penguin_8.png')";
+            if (eight == 0) {
+                finded++;
+                eight++
+            }
+            if (finded == 8)
+                window.setTimeout("window.location.href='won.html'", 500)
+        }
+    </script>
+</body>
+
+</html>

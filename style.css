@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+#game{
+    width: 600px;
+    height: 150px;
+    margin: auto;
+    background-image: url("Images/penguin_title.png");
+}
+.penguin1 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image: url('Images/mound_1.png');
+    margin-top: 125px;
+}
+.penguin2 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image: url('Images/mound_2.png');
+    margin-top: 125px;
+}
+.penguin3 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image: url('Images/mound_3.png');
+    margin-top: 125px;
+}
+.penguin4 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image: url('Images/mound_4.png');
+}
+.penguin5 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image: url('Images/mound_5.png');
+}
+.penguin6 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image: url('Images/mound_6.png');
+}
+.penguin7 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image: url('Images/mound_7.png');
+}
+.penguin8 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image: url('Images/mound_8.png');
+}
+.penguin9 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image: url('Images/mound_9.png');
+}
+.yeti{
+    background-image: url(Images/yeti.png);
+}
+.penguin1:hover{
+    background-image: url(Images/mound_1_hover.png);
+}
+.penguin2:hover{
+    background-image: url(Images/mound_2_hover.png);
+}
+.penguin3:hover{
+    background-image: url(Images/mound_1_hover.png);
+}
+.penguin4:hover{
+    background-image: url(Images/mound_4_hover.png);
+}
+.penguin5:hover{
+    background-image: url(Images/mound_5_hover.png);
+}
+.penguin6:hover{
+    background-image: url(Images/mound_6_hover.png);
+}
+.penguin7:hover{
+    background-image: url(Images/mound_7_hover.png);
+}
+.penguin8:hover{
+    background-image: url(Images/mound_8_hover.png);
+}
+.penguin9:hover{
+    background-image: url(Images/mound_9_hover.png);
+}
